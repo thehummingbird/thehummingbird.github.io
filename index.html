@@ -1,61 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Sharad Maheshwari</title>
+        <title>Hummingbird Labs</title>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body> 
         <header>
-            <section class = "nav">
-                <input type="checkbox" id="nav-toggle" class="nav-toggle">
-                <nav class="logo">
-                    <ul>
-                        <li><a href="../index.html">Sharad Maheshwari</a></li>
-                        
-                    </ul>
-                </nav>
-                <nav class="navigation">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="pages/About.html">About</a></li>
-                        <li><a href="pages/Robotics.html">Robotics</a></li>
-                        <li><a href="pages/Music.html">Music</a></li>
-                        <li><a href="pages/Contact.html">Contact</a></li>
-                        
-                    </ul>
-                </nav>
-                <label for="nav-toggle" class="nav-toggle-label">
-                    <span></span>
-                </label>
-            </section>
-            <h1 class='head'>Welcome!</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/menu.html">Menu</a></li>
+                    <li class="logo"><a href="index.html">Hummingbird Lab Logo</a></li>
+                    <li><a href="pages/location.html">Location</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </header>
-        <section class="features">
-            <h1>Welcome!</h1>
-            <p>Hello! Welcome to a snapshot of everything I do under the sun. With a deep interest in robotics and music, I use my right and left brain sensibilities to find a balance in life. I truly believe in the idea of creating, be it through music or technology.</p>
+        <section>
+            <div class="square">
+                <span></span>
+                <span></span>
+                <span></span>
+                <div class="content">
+                    <h2>Hummingbird Labs</h2>
+                    <p>
+                        We make immersive technologies which add to our everyday experiences 
+                        without subtracting our attentions from the real world. 
+                    </p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </section>
+        <section class="ataglance">
+            <heading><h2>AT A GLANCE</h2></heading>
+            <p>
+                Hummingbird Labs is an amalgamation of tech and arts. We are a bunch smitten with the idea of arts as a way of life, and technology as a method of creation. 
+                <br>
+                <br>
+                With mixed reality and robotics, we imagine a world where immersive technologies augment our lives, rather than creating a parallel digital one. 
+                <br>So that’s what we do at Hummingbird Labs – make immersive technologies running in the background and enhancing the way we interpret our physical world. 
+                
+            </p>
+        </section>
+        <section class="aboutus">
+            <heading><h1>What we do</h1></heading>
+            <div class="container">
+                <div 
+                  class="card" 
+                  data-tilt
+                  data-tilt-max="30"
+                  data-til-glare
+                  data-tilt-max-glare="0.55">
+                    <div class="mixedreality">
+                        <img src="images/mrpic.png" alt=""/>
+                    </div>
+                    <div class="description">Mixed Reality</div>
+
+                </div>
+
+                <div 
+                  class="card card2" 
+                  data-tilt
+                  data-tilt-max="30"
+                  data-til-glare
+                  data-tilt-max-glare="0.55">
+                    <div class="computervision">
+                        <img src="images/cv.png" alt=""/>
+                    </div>
+                    <div class="description">Computer Vision</div>
+                </div>
+
+                <div 
+                  class="card card3" 
+                  data-tilt
+                  data-tilt-max="30"
+                  data-til-glare
+                  data-tilt-max-glare="0.55">
+                    <div class="robotics">
+                        <img src="images/robotics.png" alt=""/>
+                    </div>
+                    <div class="description">Robotics</div>
+
+                </div>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.4.1/vanilla-tilt.min.js"></script>
+            </div>
         </section>
         <footer>
             <section>
                 <nav class="footermsg">
                     <ul>
-                        <li>Made with love by Sharad Maheshwari</li>
+                        <li>Made with love at Hummingbird Labs 2021 &copy</li>
                     </ul>
                 </nav>
                 <nav class="footerinfo">
-                    <a href="https://www.youtube.com/channel/UCJT_CojT1-DdhchGamYwZHA/videos?view_as=subscriber" target="_blank">
-                        <img src="youtubelogo.png" alt="youtubelogo" align ="right">
-                    </a>
-                    <a href="https://www.facebook.com/sharad.maheshwari.1238" target="_blank">
-                    <img src="fblogo.png" alt="fblogo" align ="right">
-                    </a>
                     <a href="https://www.instagram.com/_the_humming_bird/" target="_blank">
-                    <img src="instagramlogo.png" alt="instalogo" align ="right">
+                    <img src="../instagramlogo.png" alt="instalogo" align ="right">
                     </a>
                     <a href="https://www.linkedin.com/in/sharad-maheshwari-b85626ba" target="_blank">
-                    <img src="linkedinlogo.png" alt="linkedinlogo" align ="right">
+                    <img src="../linkedinlogo.png" alt="linkedinlogo" align ="right">
                     </a>
                 </nav>
             </section>
         </footer>
+
     </body>
 </html>

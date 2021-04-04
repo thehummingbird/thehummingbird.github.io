@@ -1,126 +1,209 @@
-body {
+body{
     background:black;
     color:white;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 0;
-    margin: 0;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin:0;
+    padding:0;
 }
 
 header{
-    background-color: black;
-    background-image:url("bgnd10.jpg");
-    background-size:100%;
-    background-position: 50% 38%;
-    height:400px;
-    padding: 20px;
-    text-align: center;
+    background:black;
+    background-size: 100%;
+    background-position: center;
     color:white;
-}
+    padding:20px;
+    height:100px;
+    text-align: center;
 
-header .nav{
-    display: flex;
-    justify-content: space-between;
 }
 
 header a{
     color:white;
-    text-align: right;
-    margin-left:30px;
-    text-decoration:none;
-
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
-.logo ul li a{
-    text-align: left;
+
+header a:hover{
+    text-decoration: underline;
+}
+
+header .logo a{
+    background-image: url("images/logobkp2.png");
+    background-size:80px;
+    background-repeat: no-repeat;
+    width:80px;
+    display: inline-block;
+    height: 80px;
+    position:relative;
+    top:-20px;
+    text-indent: -9999px;
+}
+
+section{
     color:white;
-    text-transform:uppercase;
-    font-size:24px;
-
-}
-
-hr {
-    border: 0;
-    height: 1px;
-    background: #333;
-}
-
-header.music{
-    background-color: black;
-    background-image:url("nvidiapic.JPG");
-    background-size:90%;
-    background-position: 50% 30%;
-    height:400px;
+    opacity: 1;
     padding: 20px;
+}
+section div{
+    display: flex;
+    flex-direction: column;
+}
+div{
+    background:black;
+    width:100px;
+    margin:auto;
+    border-radius: 50%;
+}
+
+.square{
+    position:relative;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content:right;
+    align-items: center;
+}
+
+.square .content{
+    width:500px;
     text-align: center;
-    color:white;
+}
+.square span:nth-child(1){
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate 6s linear infinite;
+}
+
+.square:hover span:nth-child(1){
+    background: gray;
+    border: none;
+    opacity: 0.2;
+}
+
+.square span:nth-child(2){
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate2 6s linear infinite;
+}
+
+.square:hover span:nth-child(2){
+    background: gray;
+    border: none;
+    opacity: 0.2;
+}
+
+.square span:nth-child(3){
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate 4s linear infinite;
+}
+
+.square:hover span:nth-child(3){
+    background: gray;
+    border: none;
+    opacity: 0.2;
 }
 
 ul{
     margin:0;
     padding:0;
-    list-style-type:none;
-    text-align:right;
+    list-style-type: none;
 }
 
 li{
-    display: inline-block;
-    margin: 0 10px 0 0;
-    font-size:18px;
+    display:inline-block;
+    margin: 0 20px 0 0;
+    color:white;
 }
 
-.navigation ul li a:hover{
-    /*color:rgb(211, 209, 209);*/
-    text-decoration: underline;
-}
-
-
-.features{
-    background:white;
-    color:black;
+.ataglance{
     padding: 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap:wrap;
+    text-align: center;
+    justify-content: center;
+}
+/*About Us*/
+.aboutus{
+    background-color: white;
+    color:black;
+    opacity: 1;
+    padding: 20px;
+    text-align: center;
 }
 
-.features figure{
-    width: 200px;
+.aboutus div{
+    background:none;
     margin:auto;
-    text-align :center;
+    display:flex;
+    justify-content: center;
+
+}
+
+.container{
+    height:100%;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+    cursor:default;
+    flex-direction: row;
+}
+
+.card{
+    position:relative;
     text-transform: uppercase;
+    width:15%;
+    height:5%;
+    padding:50px;
+    border-radius:20px;
+    background-image: linear-gradient(135deg,#ff677d 10%,#cd6684 100%);
+    box-shadow: 0 2px 20px black;
+    transform-style: preserve-3d;
+    transform:perspective(1000px);
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    margin: 20px;
 }
 
-.features figure img{
-    border: 1px solid white;
-    border-radius: 50%;
-    box-shadow:grey 0 0 10px;
-    width: 200px;
-
+.card .mixedreality, .computervision, .robotics{
+    width:80%;
 }
 
-.features figure img:hover {
-    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+.card .description{
+    justify-content:center;
 }
 
-footer{
+footer div{
+    border: none;
+    color: white;
     background:black;
-    color:gray;
-    padding:20px 20px;
-    text-align:center;
+    padding: 10px 20px;
+    margin: left;
 }
 
-div .musicvids{
-    display: flex;
-    padding:20px;
-    margin-left:30px;
-    margin-right:30px;
-    margin-top:50em;
+.footermsg ul{
+    text-align:left;
 }
-
-iframe {
-    margin-left:10px;
-    border: 2px black solid;
-    }
 
 .footerinfo img{
     height:30px;
@@ -130,18 +213,33 @@ iframe {
     padding:5px;
 }
 
-.footermsg ul{
-    text-align:left;
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+
 }
 
-.nav-toggle, .nav-toggle-label{
-    display:none;
+@keyframes animate2
+{
+    0%
+    {
+        transform: rotate(360deg);
+    }
+    100%
+    {
+        transform: rotate(0deg);
+    }
+
 }
 
-.myimg{
-    display:none;
-    border-radius: 50%;
-}
+
 @-webkit-keyframes hvr-wobble-skew {
     16.65% {
       -webkit-transform: skew(-12deg);
@@ -212,113 +310,37 @@ iframe {
     animation-iteration-count: 1;
   }
 
-  @media screen and (max-width:1300px){
-    header,header.music{
-        height:300px;
-    }
-}
-
-@media screen and (max-width:700px){
-
-    header.music{
-        height:200px;
-    }
-    
-}
-
-@media screen and (max-width:890px){
-
-    header,header.music{
-        height:200px;
-    }
-
-    header a{
-        margin-left:0px;
-        padding:0;
-    }
-
-    .nav-toggle-label{
-        display:block;
-    }
-
-    header .nav{
-        display:flex;
-        flex-direction:column;
-
-    }
-    header .nav .logo ul {
-        color:blue;
-        text-align:center;
-    }
-
-    header .nav ul {
-        text-align:left;
-    }
-
-    header .nav .navigation ul li{
-        display:none;
-        margin-bottom:1em;
-    }
-
-    hr,h1.head{
-        display:none;
-    }
-    header .nav .navigation ul li a{
-        text-align:left;
-    }
-    
-    .nav-toggle:checked ~ .navigation ul li{
-        display:flex;
-        flex-direction:row;
-    }
-
-    .nav-toggle-label{
-        position:absolute;
-        top:0;
-        left:0;
-        border: none;
-        height: 30px;
-        display:flex;
-        align-items: center;
-    }
-
-    .nav-toggle-label span,
-    .nav-toggle-label span::before,
-    .nav-toggle-label span::after{
-        display:block;
-        background:white;
-        height:2px;
-        width:2em;
-        border-radius:2px;
-        position:relative;
-    }
-
-    .nav-toggle-label span::before,
-    .nav-toggle-label span::after{
-        content:'';
-        position:absolute;
-    }
-
-    .nav-toggle-label span::before{
-        bottom:px;
-    }
-
-    .nav-toggle-label span::before{
-        top:8px;
-    }
-
-}
-/*
-header .nav{
-    display: flex;
-    justify-content: space-between;
-}
-
-header a{
-    color:white;
-    text-align: right;
-    margin-left:30px;
-    text-decoration:none;
-
-}
-*/
+  /*contact page*/
+  input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .contact-form {
+    border-radius: 5px;
+    background-color: black;
+    padding: 20px;
+    width:50%;
+  }
