@@ -157,8 +157,8 @@ li{
 }
 
 .aboutus .container{
-    height:100%;
     width:100%;
+    height:auto;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -186,12 +186,15 @@ li{
 
 .card .mixedreality{
     width:80%;
+    height:auto;
 }
 .card2 .computervision{
   width:80%;
+  height:auto;
 }
 .card3 .robotics{
   width:80%;
+  height:auto;
 }
 
 
