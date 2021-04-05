@@ -151,13 +151,12 @@ li{
 
 .aboutus div{
     background:none;
-    margin:auto;
     display:flex;
     justify-content: center;
 
 }
 
-.container{
+.aboutus .container{
     height:100%;
     width:100%;
     display:flex;
@@ -168,14 +167,13 @@ li{
     flex-direction: row;
 }
 
-.card{
+.card, .card2 ,.card3{
     position:relative;
     text-transform: uppercase;
-    width:15%;
-    height:5%;
-    padding:50px;
+    width:20%;
+    height:100%;
     border-radius:20px;
-    background-image: linear-gradient(135deg,#ff677d 10%,#cd6684 100%);
+    background-color: linear-gradient(135deg,#ff677d 10%,#cd6684 100%);
     box-shadow: 0 2px 20px black;
     transform-style: preserve-3d;
     transform:perspective(1000px);
@@ -185,13 +183,33 @@ li{
     margin: 20px;
 }
 
-.card .mixedreality, .computervision, .robotics{
+
+.card .mixedreality{
     width:80%;
 }
+.card2 .computervision{
+  width:80%;
+}
+.card3 .robotics{
+  width:80%;
+}
+
 
 .card .description{
     justify-content:center;
+    width:fit-content;
 }
+
+.card2 .description{
+  justify-content:center;
+  width:fit-content;
+}
+
+.card3 .description{
+  justify-content:center;
+  width:fit-content;
+}
+
 
 footer div{
     border: none;
