@@ -24,9 +24,9 @@ header a{
 }
 
 
-header a:hover{
+/*header a:hover{
     text-decoration: underline;
-}
+}*/
 
 header .logo a{
     background-image: url("images/logobkp2.png");
@@ -82,7 +82,7 @@ div{
 }
 
 .square:hover span:nth-child(1){
-    background: gray;
+    background: #5f0c7a;
     border: none;
     opacity: 0.2;
 }
@@ -135,6 +135,10 @@ li{
     color:white;
 }
 
+header nav ul{
+  padding:0;
+  align-items: center;
+}
 .ataglance{
     padding: 20px;
     text-align: center;
@@ -174,7 +178,7 @@ li{
     height:20vw;
     border-radius:20px;
     background-color: linear-gradient(135deg,#ff677d 10%,#cd6684 100%);
-    box-shadow: 0 2px 20px black;
+    box-shadow: 0 2px 20px #350644;
     transform-style: preserve-3d;
     transform:perspective(1000px);
     display:flex;
@@ -365,3 +369,31 @@ footer div{
     padding: 20px;
     width:50%;
   }
+
+  /*nav hover effect*/
+  header nav ul li a:hover {
+    color: #600c7c;
+    text-decoration: underline;
+  }
+  header nav ul li a:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    content: '.';
+    color: transparent;
+    visibility: none;
+    opacity: 0;
+    z-index: -1;
+  }
+  header nav ul li a:hover:after {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+  }
+  
