@@ -185,16 +185,19 @@ li{
 
 
 .card .mixedreality{
-  width:100%;
-  height:100%;
+  width: 80%; 
+  height: auto;
+  max-width:100%;
 }
 .card2 .computervision{
-  width:100%;
-  height:100%;
+  width: 80%; 
+  height: auto;
+  max-width:100%;
 }
 .card3 .robotics{
-  width:100%;
-  height:100%;
+  width: 80%; 
+  height: auto;
+  max-width:100%;
 }
 
 
