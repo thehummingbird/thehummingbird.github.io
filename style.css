@@ -4,16 +4,16 @@
     box-sizing: border-box; /*so that padding ahs no effect on width*/
 }
 
-html, body{
-    width: 100%;
-    position: relative;
-}
-
 body{
     font-family: "Montserrat", sans-serif;
     height: 100vh;
     background: rgb(0, 0, 0);
-    overflow-x:hidden;
+}
+
+body .wrapper{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position:absolute;
 }
 
 nav{
