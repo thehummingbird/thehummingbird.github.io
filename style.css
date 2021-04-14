@@ -28,7 +28,7 @@ nav{
 }
 
 .logo {
-    background-image: url("/images/logobkp3.jpeg");
+    background-image: url("/images/logohbl.png");
     position:relative;
     background-size:80px;
     top:0.6rem;
@@ -275,15 +275,18 @@ main{
 
     .square .content{
         color:rgb(255,255, 255,0);
-        background-image: url("/images/logobkp3.jpeg");
+        background-image: url("/images/logohbl.png");
         background-size:160px;
-        top:0.6rem;
+        top:1rem;
         width:160px;
         height:160px;
         background-repeat: no-repeat;
 
     }
 
+    .logo{
+        visibility: hidden;
+    }
     .hamburger{
         display:block;
     }
@@ -371,6 +374,11 @@ main{
 
     .industry .icard:nth-child(odd){
         margin-top:2rem;
+        margin-left: 8rem;
+    }
+
+    .industry .icard:nth-child(even){
+        margin-right: 8rem;
     }
 
 }
