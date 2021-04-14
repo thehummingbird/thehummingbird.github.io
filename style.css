@@ -273,6 +273,9 @@ main{
         height:50vh;
     }
 
+    .main{
+        height:100vh;
+    }
     .square .content{
         color:rgb(255,255, 255,0);
         background-image: url("/images/logohbl.png");
