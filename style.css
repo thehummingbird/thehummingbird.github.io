@@ -369,6 +369,10 @@ main{
         display:none;
     }
 
+    .industry .icard:nth-child(odd){
+        margin-top:2rem;
+    }
+
 }
 
 @keyframes animate
