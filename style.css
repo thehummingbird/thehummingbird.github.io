@@ -177,7 +177,7 @@ main{
     position:relative;
     align-items: center;
     margin:auto;
-    margin-top:20px;
+    margin-top:30px;
     text-align:center;
     width:100%;
     height:auto;
@@ -186,6 +186,7 @@ main{
     letter-spacing: .02em;
     font-family: 'Muli', sans-serif;
     font-weight: bold;
+    padding:20px;
 }
 
 .container{
@@ -228,7 +229,7 @@ main{
     padding:1rem;
 }
 
-.container .card:nth-child(even) img{
+.container .card:nth-child(even) div{
     order: 2;
 }
 
@@ -347,14 +348,21 @@ main{
 @media only screen and (max-width: 800px){
 
     .container{
-        align-items: center;
+        align-content: center;
     }
     .container .card{
         display:block;
+        background: chocolate;
+
     }
 
+    .card img{
+        align-content: center;
+    }
     .card div{
-        margin:auto;
+        margin: 0 auto;
+        background: rgb(243, 247, 247);
+        text-align: center;
     }
 
     .card div p{
