@@ -1,101 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Hummingbird Labs</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body> 
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li class="logo"><a href="index.html">Hummingbird Lab Logo</a></li>
-                    <li><a href="pages/contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <section>
-            <div class="square">
-                <span></span>
-                <span></span>
-                <span></span>
-                <div class="content">
-                    <h2>Hummingbird Labs</h2>
-                    <p>
-                        We make immersive technologies for everyday experiences 
-                        which do not subtract our attention from the real world. 
-                    </p>
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css"/>
+    <title>Hummingbird Labs</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">Logo</div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="#" class="nav-link">About</a></li>
+            <li><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="square">
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="content">
+                <h2>Hummingbird Labs</h2>
+                <p>
+                    We make immersive technologies for everyday experiences 
+                    which do not subtract our attention from the real world. 
+                </p>
+            </div>
+        </div>
+    </main>
+    <section class="ataglance">
+        <heading><h2 style="color:#750f97;">AT A GLANCE</h2></heading>
+        <p>
+            Hummingbird Labs is an amalgamation of technology and arts. We are a bunch smitten with the idea of arts as a way of life, and technology as a method of creation. 
+            <br>
+            <br>
+            With mixed reality and robotics, we imagine a world where immersive technologies augment our lives, instead of creating a parallel digital one. 
+            <br>So that&#39s what we do at Hummingbird Labs &#8211 make immersive technologies running in the background and enhancing the way we interpret our physical world. 
+            
+        </p>
+    </section>
+    <section class="container">
+        <section class="card">
+            <img src="images/mrpic.png" alt="">
+            <div>
+                <h3>Mixed Reality</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis accusamus natus vel. Hic, enim odio nisi corrupti adipisci repudiandae aperiam!</p>
             </div>
         </section>
-        <section class="ataglance">
-            <heading><h2 style="color:#750f97;">AT A GLANCE</h2></heading>
-            <p>
-                Hummingbird Labs is an amalgamation of technology and arts. We are a bunch smitten with the idea of arts as a way of life, and technology as a method of creation. 
-                <br>
-                <br>
-                With mixed reality and robotics, we imagine a world where immersive technologies augment our lives, instead of creating a parallel digital one. 
-                <br>So that’s what we do at Hummingbird Labs – make immersive technologies running in the background and enhancing the way we interpret our physical world. 
-                
-            </p>
-        </section>
-        <section class="aboutus">
-            <heading><h1>What we do</h1></heading>
-            <div class="container">
-                <div 
-                  class="card" 
-                  data-tilt
-                  data-tilt-max="30"
-                  data-til-glare
-                  data-tilt-max-glare="0.55">
-                    <div class="mixedreality">
-                        <img style='height: 100%; width: 100%; object-fit: contain' src="images/mrpic.png" alt=""/>
-                    </div>
-                    <div class="description">AR/VR</div>
-
-                </div>
-
-                <div 
-                  class="card2" 
-                  data-tilt
-                  data-tilt-max="30"
-                  data-til-glare
-                  data-tilt-max-glare="0.55">
-                    <div class="computervision">
-                        <img style='height: 100%; width: 100%; object-fit: contain' src="images/cv2.png" alt=""/>
-                    </div>
-                    <div class="description">Vision</div>
-                </div>
-
-                <div 
-                  class="card3" 
-                  data-tilt
-                  data-tilt-max="30"
-                  data-til-glare
-                  data-tilt-max-glare="0.55">
-                    <div class="robotics">
-                        <img style='height: 100%; width: 100%; object-fit: contain' src="images/robotics.png" alt=""/>
-                    </div>
-                    <div class="description">Robotics</div>
-                </div>
-
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.4.1/vanilla-tilt.min.js"></script>
+        <section class="card">
+            <img src="images/cv2.png" alt="">
+            <div>
+                <h3>Computer Vision</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis accusamus natus vel. Hic, enim odio nisi corrupti adipisci repudiandae aperiam!</p>
             </div>
         </section>
-        <footer>
-            <section>
-                <nav class="footermsg">
-                    <ul>
-                        <li>Made with love at Hummingbird Labs 2021 &copy</li>
-                    </ul>
-                </nav>
-                <nav class="footerinfo">
-                    <a href="https://www.linkedin.com/in/sharad-maheshwari-b85626ba" target="_blank">
-                    <img src="../linkedinlogo.png" alt="linkedinlogo" align ="right">
-                    </a>
-                </nav>
-            </section>
-        </footer>
-
-    </body>
+        <section class="card">
+            <img src="images/robotics.png" alt="">
+            <div>
+                <h3>Robotics</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis accusamus natus vel. Hic, enim odio nisi corrupti adipisci repudiandae aperiam!</p>
+            </div>
+        </section>
+    </section>
+    <script src="/app.js"></script>
+</body>
 </html>
