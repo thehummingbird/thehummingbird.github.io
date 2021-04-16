@@ -313,6 +313,7 @@ main{
 .industry .icard h1{
     margin-top: 1rem;
     margin-bottom: 1rem;
+    font-size:medium;
 }
 
 .industry .icard img{
