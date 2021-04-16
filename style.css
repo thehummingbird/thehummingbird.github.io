@@ -107,7 +107,7 @@ main{
     position:relative;
     width:500px;
     margin:auto;
-    font-family:'Playfair Display SC', serif;
+    font-family: 'Poppins', sans-serif;
     
     
 }
@@ -172,14 +172,15 @@ main{
 
 
 .ataglance{
-    background-color: rgb(250, 250, 250);
-    color:black;
+    background-color: black;
+    color:white;
     position:relative;
     align-items: center;
     margin:auto;
     margin-top:30px;
+    margin-bottom: 10px;;
     text-align:center;
-    width:100%;
+    width:90%;
     height:auto;
     font-size: 16px;
     line-height: 1.8em;
@@ -187,6 +188,9 @@ main{
     font-family: 'Muli', sans-serif;
     font-weight: bold;
     padding:20px;
+    border-style: solid;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .container{
@@ -213,6 +217,7 @@ main{
     margin-top:2rem;
     width:80%;
     border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
 
 }
 
@@ -234,13 +239,14 @@ main{
 }
 
 .industry{
-    background-color: rgb(10, 9, 9);
+    background-color: rgb(0, 0, 0);
     width: 100%; /*so that it is responsive and shrinks*/
     margin:auto; /*so that children are in the center*/
     padding: 0 4rem;
     height:auto;
     display:flex;
     justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
 
 }
 
@@ -286,7 +292,7 @@ main{
 
 .industry .icard .ist{
     background:inherit;
-    background-image: url("images/ipd.png");
+    background-image: url("images/ist.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -360,6 +366,106 @@ main{
 
 .close:hover{
     opacity:0.7;
+}
+
+
+.footer{
+    display:flex;
+    height:55px;
+}
+.footermsg{
+    text-align:left;
+    color:black;
+    background: white;
+    text-decoration: none;
+    width:100%;
+    top:5px;
+
+}
+ 
+.footerinfo{
+    display:inline;
+    text-align: right;
+    background:white;
+    
+}
+.footerinfo img{
+    height:30px;
+    width:30px;
+    position:relative;
+    right:0px;
+    top:15px;
+}
+
+@-webkit-keyframes hvr-wobble-skew {
+    16.65% {
+      -webkit-transform: skew(-12deg);
+      transform: skew(-12deg);
+    }
+    33.3% {
+      -webkit-transform: skew(10deg);
+      transform: skew(10deg);
+    }
+    49.95% {
+      -webkit-transform: skew(-6deg);
+      transform: skew(-6deg);
+    }
+    66.6% {
+      -webkit-transform: skew(4deg);
+      transform: skew(4deg);
+    }
+    83.25% {
+      -webkit-transform: skew(-2deg);
+      transform: skew(-2deg);
+    }
+    100% {
+      -webkit-transform: skew(0);
+      transform: skew(0);
+    }
+  }
+  @keyframes hvr-wobble-skew {
+    16.65% {
+      -webkit-transform: skew(-12deg);
+      transform: skew(-12deg);
+    }
+    33.3% {
+      -webkit-transform: skew(10deg);
+      transform: skew(10deg);
+    }
+    49.95% {
+      -webkit-transform: skew(-6deg);
+      transform: skew(-6deg);
+    }
+    66.6% {
+      -webkit-transform: skew(4deg);
+      transform: skew(4deg);
+    }
+    83.25% {
+      -webkit-transform: skew(-2deg);
+      transform: skew(-2deg);
+    }
+    100% {
+      -webkit-transform: skew(0);
+      transform: skew(0);
+    }
+  }
+
+.footerinfo img {
+display: inline-block;
+vertical-align: middle;
+-webkit-transform: perspective(1px) translateZ(0);
+transform: perspective(1px) translateZ(0);
+box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.footerinfo img:hover, .footerinfo img:focus, .footerinfo img:active {
+-webkit-animation-name: hvr-wobble-skew;
+animation-name: hvr-wobble-skew;
+-webkit-animation-duration: 1s;
+animation-duration: 1s;
+-webkit-animation-timing-function: ease-in-out;
+animation-timing-function: ease-in-out;
+-webkit-animation-iteration-count: 1;
+animation-iteration-count: 1;
 }
 
 @media only screen and (max-width: 800px){
