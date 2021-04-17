@@ -17,6 +17,11 @@ const modalPdOpen = document.querySelector('.pdcard');
 const modalPd = document.querySelector('.modalpd');
 const modalPdbuttonClose = document.querySelector('.closepd');
 
+const modalContactOpen = document.querySelector('.contact');
+const modalContact = document.querySelector('.modalcontact');
+const modalContactbuttonClose = document.querySelector('.closecontact');
+
+
 
 hamburger.addEventListener('click',()=>{
     hamburger.classList.toggle('toggle')
@@ -57,5 +62,13 @@ modalPdOpen.addEventListener('click',() =>{
 
 modalPdbuttonClose.addEventListener('click', () =>{
     modalPd.classList.toggle('active')
+})
+
+modalContactOpen.addEventListener('click',() =>{
+    modalContact.classList.toggle('active')
+})
+
+modalContactbuttonClose.addEventListener('click', () =>{
+    modalContact.classList.toggle('active')
 })
 
