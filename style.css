@@ -23,7 +23,7 @@ nav{
     align-items:center;
     height: 4rem;
     padding:0 2rem;
-    z-index: 999;
+    z-index: 998;
     background:black;
 }
 
@@ -67,7 +67,7 @@ nav{
     display:flex;
     list-style:none;
     text-transform: uppercase;
-    z-index: 999;
+    z-index: 998;
 }
 
 .nav-links li:not(:last-child){
@@ -263,10 +263,12 @@ main{
     text-align: center;
 }
 
+/*
 .industry .icard:hover{
     background-color:rgb(86, 19, 88);
     cursor: pointer;
 }
+*/
 
 .industry .icard .icv, .imr, .ist, .ipd{
     width:100%;
@@ -340,18 +342,18 @@ main{
 
 }
 .modalcv.active{
-    display:block;
+    display:none;
 }
 
 .modalmr.active{
-    display:block;
+    display:none;
 }
 
 .modalst.active{
-    display:block;
+    display:none;
 }
 .modalpd.active{
-    display:block;
+    display:none;
 }
 
 .modalcontact.active{
@@ -368,6 +370,7 @@ main{
     justify-content: center;
     width:60%;
     height:auto;
+    z-index: 999;
 }
 
 .contact-form{
@@ -375,8 +378,7 @@ main{
     text-align: left;
 }
 #contact-form{
-    width:100%
-    display:grid;
+    width:100%;
     flex-direction: column;
     justify-content: center;
     height:auto;
@@ -605,7 +607,8 @@ animation-iteration-count: 1;
     }
 
     .modalcontact{
-        width:80%;
+        width:100%;
+        height:100%;
     }
 
 }
